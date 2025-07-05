@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --bg-clr: #f4d04e;
+    --cardbg-clr: #ffffff;
+    --base-clr: #121212;
+    --para-clr: #6b6b6b;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Figtree", sans-serif;
+}
+body{
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: var(--bg-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+.card{
+    width: 100%;
+    max-width: 375px;
+    background-color: var(--cardbg-clr);
+    padding: 1em;
+    border-radius: 1em;
+    border: 1px solid var(--base-clr);
+    box-shadow: 7px 7px var(--base-clr);
+}
+.card img{
+    width: 100%;
+    z-index: 999;
+    border-radius: 1rem;
+}
+.img-box{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+    img{
+        height: 2em;
+        width: 2em;
+    }
+    span{
+        font: inherit;
+        font-weight: 700;
+    }
+}
+.card .box{
+    width: 85px;
+    background-color: var(--bg-clr);
+    padding: 5px 10px ;
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 1em;
+    font-size: 15px;
+}
+.card h4{
+    font-weight: 500;
+}
+.card h2{
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.card p{
+    margin-top: 1em;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: var(--para-clr);
+}
